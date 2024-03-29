@@ -1,0 +1,191 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deccan Construction & Interior Design</title>
+    <link rel="stylesheet" href="{% static "homepage/css/homepage.css" %}">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="primary-navigation">
+            <div class="hamburger-menu-icon"><i class="fa-solid fa-bars"></i></div>
+            <div class="navigation-menu">
+                <div class="menu-close-icon"><i class="fa-solid fa-x"></i></div>
+                <div class="navigation-Tabs">
+                    <a href="#hero-section">Home</a>
+                    <a href="#why-choose-us">Services</a>
+                    <a href="#">Testimonials</a>
+                </div>
+            </div>
+            <div class="logo"><img src="{% static "homepage/images/logo.png" %}" alt="Logo"></div>
+        </div>
+
+        <div class="hero-section" id="hero-section">
+            <div class="image-container">
+                {% for image in heroImage %}
+
+                    <img class="heroImg" src="{{image.image.url}}" alt="Project Images">
+
+                {% endfor %}
+
+                <div class="arrowkeys">
+                    <div class="arrowLeft arrow-container" onclick="handleLeftClick()"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="arrowRight arrow-container" onclick="handleRightClick()"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h2 class="heroText1">From Concept to Construction: We Help You Craft Your Ideal Space.</h2>
+                <p class="heroText2">Our services create accurate and immersive 2D and 3D plans, with meticulous estimates for your vision</p>
+                <button class="heroContact contact" onclick="contactPopup()">Contact Us</button>
+            </div>
+        </div>
+
+        <div class="why-choose-us" id="why-choose-us">
+            <h4 class="whyUs">Why Deccan Construction?</h4>
+            <div class="ourWork">
+                <div class="ourWorkIcon"><img src="{% static "homepage/images/convenient.png" %}" alt=""></div>
+                <div class="ourWorkTag">All-in-One Convenience</div>
+                <div class="ourWorkDescription">Streamline your project with comprehensive services covering planning, design, and execution, all under one roof for ultimate convenience.</div>
+            </div>
+            <div class="ourWork">
+                <div class="ourWorkIcon"><img src="{% static "homepage/images/accounting.png" %}" alt=""></div>
+                <div class="ourWorkTag">Transparent Financial Planning</div>
+                <div class="ourWorkDescription">Enjoy peace of mind with clear, honest estimates and financial guidance throughout your project journey.</div>
+            </div>
+            <div class="ourWork">
+                <div class="ourWorkIcon"><img src="{% static "homepage/images/tailored.png" %}" alt=""></div>
+                <div class="ourWorkTag">Tailored Excellence</div>
+                <div class="ourWorkDescription">Elevate your space with cutting-edge designs and creative solutions that redefine architectural excellence and captivate your imagination.</div>
+            </div>
+            <div class="ourWork">
+                <div class="ourWorkIcon"><img src="{% static "homepage/images/innovation.png" %}" alt=""></div>
+                <div class="ourWorkTag">Innovative Design Mastery</div>
+                <div class="ourWorkDescription">Experience personalized attention and bespoke solutions crafted to match your unique vision and requirements seamlessly.</div>
+            </div>
+        </div>
+
+        <div class="services-section">
+            <div class="available-services">Services We Provide</div>
+            <div class="service active">
+                <div class="service-image"><img src="{% static "homepage/images/2Dfloorplan.png" %}" alt=""></div>
+                <div class="service-title">2D Floor Plan</div>
+                <div class="service-meta"><p>Precision blueprints for your project’s foundation, translating ideas into detailed visual representations for effective planning and execution.</p></div>
+            </div>
+            <div class="service">
+                <div class="service-image"><img src="{% static "homepage/images/3Dexterior.png" %}" alt=""></div>
+                <div class="service-title">3D Exteriors</div>
+                <div class="service-meta"><p>Lifelike visualizations showcasing exterior designs, offering a glimpse into the future charm and appeal of your architectural masterpiece</p></div>
+            </div>
+            <div class="service">
+                <div class="service-image"><img src="{% static "homepage/images/3Dinterior.png" %}" alt=""></div>
+                <div class="service-title">3D Interior</div>
+                <div class="service-meta"><p>Immersive virtual tours of interior spaces, allowing you to envision and experience the ambiance and functionality of your dream environment.</p></div>
+            </div>
+        </div>
+
+        <div class="testimonial-section">
+            <h3 class="testimonial-title">They Trusted Us</h3>
+            <p class="testimonial-meta">Our user's testimonials to see what they have to say.</p>
+
+            <div class="all-testimonials">
+                {% for review in reviews%}
+                    <div class="review" id="review">
+                        <div class="gender">
+                            {% if review.gender == 'male' %}
+                                <img src="{% static "homepage/images/male.jpg" %}" alt="Male Image">
+                            {% elif review.gender == "female" %}
+                                <img src="{% static "homepage/images/female.jpg" %}" alt="">
+                            {% endif %}  
+                        </div>
+                        <div class="name">
+                            <p>{{review.name}}</p>
+                        </div>
+                        <div class="email">
+                            <p>{{review.email}}</p>
+                        </div>
+                        <div class="review-meta">
+                            <p>{{review.review}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="reviewArrows">
+                    <div class="arrowLeft sliderLeftArrow prev arrowButtons" id = 'prev'><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="arrowRight sliderRightArrow next arrowButtons" id = 'next'><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <div class="footer-logo"><img src="{% static "homepage/images/logo.png" %}" alt=""></div>
+            <div class="footer-company-name"><h3>Deccan Construction & Interior Designers</h3></div>
+            <div class="footer-sitemenu">
+                <h3>Site</h3>
+                <a href="">Services</a>
+                <a href="">Testimonials</a>
+                <a href="">About Us</a>
+            </div>
+            <div class="footer-contactinfo">
+                <h3>Contact</h3>
+                <p>Visit our office</p>
+                <p>Call Us: 1234567891</p>
+                <p>Timing: Monday - Friday <br> 12pm - 11pm</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactPopup">
+        <div class="customMessage">
+            <div class="connectTag">
+                <div class="connect">Let's Connect</div>
+                <div class="connect-msg"><p>Feel free to ask us anything</p></div>
+            </div>
+            <form action="" class="popupForm">
+                <input type="text" placeholder="Name" class="inputs" required="">
+                <div class="error-text">Name cannot be empty</div>
+                <input type="text" placeholder="Email" class="inputs" required="">
+                <div class="error-text">Email cannot be empty</div>
+                <textarea name="" id="message" cols="30" rows="5" placeholder="Your Message" class="textField" ></textarea>
+                <div class="error-text">Message cannot be empty</div>
+            </form>
+            <button class="sendMessage" onclick="submitform()">Send Message</button>
+        </div>
+        <div class="info">
+            <p class="contactInfo-popup">Contact Information</p>
+            <div class="email-popup">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p>zaffar@gmail.com</p>
+            </div>
+            <div class="mobile-popup">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <p>+919988990045</p>
+            </div>
+            <div class="address-popup">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <p>Mughalpura</p>
+            </div>
+            <div class="timing-popup">
+                <span><i class="fa-solid fa-clock"></i></span>
+                <p>Mon-Fri <br>12pm-11pm</p>
+            </div>
+        </div>
+        <div class="close">
+            <span class="x"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        
+    </div>
+    
+
+
+
+
+    <script src="https://kit.fontawesome.com/0017000d4e.js" crossorigin="anonymous"></script>
+    <script src="{% static "homepage/javascript/navigationBar.js" %}"></script>
+    <script src="{% static "homepage/javascript/sliderButton.js" %}"></script>
+    <script src="{% static "homepage/javascript/services.js" %}"></script>
+    <script src="{% static "homepage/javascript/reviews.js" %}"></script>
+    <script src="{% static "homepage/javascript/contact.js" %}"></script>
+</body>
+</html>
