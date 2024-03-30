@@ -491,10 +491,10 @@ html{
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 70%;
+        top: 30%;
         left: 50%;
         border-radius: 1rem;
-        transform: translate(-50%,-70%);
+        transform: translate(-50%,-30%);
         z-index: 10;
         width: 90%;
         backdrop-filter: blur(10px);
