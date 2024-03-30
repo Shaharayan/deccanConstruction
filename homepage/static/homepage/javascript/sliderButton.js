@@ -22,6 +22,6 @@ function handleLeftClick(){
 
 function slideImage(){
     for(slide of heroImages){
-        slide.style.transform = `translateY(-${counter*101}%)`;
+        slide.style.transform = `translateX(-${counter*101}%)`;
     }
 }
