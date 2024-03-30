@@ -491,10 +491,10 @@ html{
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 30%;
+        top: 50%;
         left: 50%;
         border-radius: 1rem;
-        transform: translate(-50%,-30%);
+        transform: translate(-50%,-50%);
         z-index: 10;
         width: 90%;
         backdrop-filter: blur(10px);
@@ -507,6 +507,7 @@ html{
 
     .customMessage{
         background-color: var(--primary);
+
     }
 
     
@@ -539,7 +540,7 @@ html{
     }
 
     .contactInfo-popup{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 700;
     }
 
@@ -551,7 +552,7 @@ html{
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .connectTag{
@@ -565,7 +566,7 @@ html{
     }
 
     .connect{
-        font-size: 2rem;
+        font-size: 1.8rem;
         word-wrap: break-word;
         color: var(--text);
         font-weight: 700;
@@ -582,8 +583,8 @@ html{
         display: flex;
         gap: 0.5rem;
         flex-direction: column;
-        margin-bottom: 2rem;
-        margin-top: 8rem;
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
         width: 70%;
     }
 
