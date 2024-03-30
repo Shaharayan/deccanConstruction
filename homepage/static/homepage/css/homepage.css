@@ -67,8 +67,8 @@ html{
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        background-color: #cfb573dc;
-        backdrop-filter: blur(10px);
+        background-color: #cfb573ec;
+        backdrop-filter: blur(20px);
         /* border: 1px solid red; */
     }
 
