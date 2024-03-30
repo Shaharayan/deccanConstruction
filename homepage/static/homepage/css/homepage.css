@@ -595,7 +595,7 @@ html{
         font-size: 0.8rem;
         height: 2rem;
         outline: none;
-        color: #7A7A7A;
+        color: white;
         border: none;
         padding: 0 0.5rem;
         box-shadow: 2px 2px 5px rgba(56, 53, 53, 0.856) inset;
@@ -610,7 +610,7 @@ html{
         background-color: var(--secondary);
         outline: none;
         border: none;
-        color: #7A7A7A;
+        color: white;
         resize: none;
         font-size: 0.8rem;
         border-radius: 1rem;
