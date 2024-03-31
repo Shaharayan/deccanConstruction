@@ -834,7 +834,7 @@ html{
 
     .reviewArrows{
         z-index: 2000;
-        top: 100%;
+        top: 95%;
         left: 50%;
         transform: translateX(-50%);
         height: 4rem;
@@ -845,9 +845,9 @@ html{
     }
 
     .arrowButtons{
-        font-size: 3rem;
-        width: 3.5rem;
-        height: 3.5rem;
+        font-size: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
 
