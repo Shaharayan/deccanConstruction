@@ -290,7 +290,7 @@ html{
         background-color: var(--secondary);
         border-radius: 1rem;
         margin-bottom: 1rem;
-        padding: 1rem 0;
+        padding: 0;
     }
     
     .service-image img{
