@@ -720,13 +720,13 @@ html{
         display: flex;
         flex-direction: row;
         margin: 0;
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
 
     .navigation-Tabs a{
         text-decoration: none;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .logo img{
@@ -742,7 +742,7 @@ html{
     .image-container{
         /* border: 1px solid red; */
         margin: 0 4rem;
-        height: 35rem;
+        height: 25rem;
         overflow: hidden;
         position: relative;
         display: flex;
