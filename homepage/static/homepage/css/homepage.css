@@ -38,7 +38,7 @@ html{
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 500px) {
     .primary-navigation{
         display: flex;
         justify-content: flex-end;
@@ -511,8 +511,6 @@ html{
         /* justify-content: space-evenly; */
         color: #F0EBEB;
         align-items: center;
-        overflow: scroll;
-        scrollbar-width: none;
         /* backdrop-filter: blur(10px); */
     }
 
@@ -627,6 +625,7 @@ html{
         font-size: 1rem;
         border-radius: 1rem;
         overflow-x: hidden;
+        margin: 0 2rem;
         padding: 0.5rem 0.5rem;
         box-shadow: 2px 2px 5px rgba(56, 53, 53, 0.856) inset;
     }
@@ -692,7 +691,7 @@ html{
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width > 500px) and (max-width: 768px) {
     .primary-navigation{
         display: flex;
         justify-content: space-between;
