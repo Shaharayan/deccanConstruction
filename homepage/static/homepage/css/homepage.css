@@ -605,13 +605,14 @@ html{
     .inputs::placeholder,
     .textField::placeholder{
         transform: translateX(1rem);
+        color: white;
     }
 
     .textField{
         background-color: var(--secondary);
         outline: none;
         border: none;
-        color: white;
+        color: var(--text);
         resize: none;
         font-size: 0.8rem;
         border-radius: 1rem;
