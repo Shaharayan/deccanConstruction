@@ -7,8 +7,15 @@ const navigationMenu = document.querySelector('.navigation-menu');
 
 
 document.addEventListener('DOMContentLoaded',()=>{
-    navigationMenu.style.transform = 'translateX(-100%)';
+    x = window.matchMedia("(max-width: 500px)")
+    responsive(x);
 })
+
+function responsive(x){
+    if (x.matches){
+        navigationMenu.style.transform = 'translateX(-100%)';
+    }
+}
 
 menuOpen.addEventListener('click', () => {
     const navigationMenu = document.querySelector('.navigation-menu');
