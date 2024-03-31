@@ -38,7 +38,7 @@ html{
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 500px) {
     .primary-navigation{
         display: flex;
         justify-content: flex-end;
@@ -691,7 +691,7 @@ html{
     }
 }
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
     .primary-navigation{
         display: flex;
         justify-content: space-between;
@@ -743,7 +743,6 @@ html{
 
 
     .image-container{
-        /* border: 1px solid red; */
         margin: 0 2rem;
         height: 25rem;
         overflow: hidden;
@@ -858,6 +857,6 @@ html{
     .footer-section{
         background-repeat: no-repeat;
         background-size: cover;
-    }
+    } */
 
-}
+/* } */
