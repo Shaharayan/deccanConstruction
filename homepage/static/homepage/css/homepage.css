@@ -825,8 +825,8 @@ html{
 
     .review{
         margin: 0;
-        width: 70%;
-        height: 35rem;
+        width: 85%;
+        height: 25rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
