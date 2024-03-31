@@ -511,6 +511,8 @@ html{
         /* justify-content: space-evenly; */
         color: #F0EBEB;
         align-items: center;
+        overflow: scroll;
+        scrollbar-width: none;
         /* backdrop-filter: blur(10px); */
     }
 
