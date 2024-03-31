@@ -157,7 +157,7 @@ html{
 
     .image-container{
         /* border: 1px solid red; */
-        margin: 0 1rem;
+        margin: 0;
         overflow: hidden;
         position: relative;
         display: flex; 
