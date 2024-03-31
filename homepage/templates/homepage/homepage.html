@@ -17,10 +17,11 @@
                 <div class="navigation-Tabs">
                     <a href="#hero-section">Home</a>
                     <a href="#why-choose-us">Services</a>
-                    <a href="#testimonials">Testimonials</a>
+                    <a href="#">Testimonials</a>
                 </div>
             </div>
             <div class="logo"><img src="{% static "homepage/images/logo.png" %}" alt="Logo"></div>
+            <button class="headerContact">Contact Us</button>
         </div>
 
         <div class="hero-section" id="hero-section">
@@ -86,7 +87,7 @@
             </div>
         </div>
 
-        <div class="testimonial-section" id="testimonials">
+        <div class="testimonial-section">
             <h3 class="testimonial-title">They Trusted Us</h3>
             <p class="testimonial-meta">Our user's testimonials to see what they have to say.</p>
 
@@ -147,7 +148,7 @@
                 <div class="error-text">Name cannot be empty</div>
                 <input type="text" placeholder="Email" class="inputs" required="">
                 <div class="error-text">Email cannot be empty</div>
-                <textarea name="" id="message" cols="30" rows="3" placeholder="Your Message" class="textField" ></textarea>
+                <textarea name="" id="message" cols="30" rows="5" placeholder="Your Message" class="textField" ></textarea>
                 <div class="error-text">Message cannot be empty</div>
             </form>
             <button class="sendMessage" onclick="submitform()">Send Message</button>
