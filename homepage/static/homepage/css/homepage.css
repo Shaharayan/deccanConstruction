@@ -505,7 +505,7 @@ html{
         border-radius: 1rem;
         transform: translate(-50%,-50%);
         z-index: 10;
-        width: 80%;
+        width: 90%;
         backdrop-filter: blur(10px);
         animation: contactup 500ms forwards;
         /* justify-content: space-evenly; */
@@ -533,6 +533,7 @@ html{
     .customMessage{
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+        position: relative;
     }
 
     .info{
@@ -606,6 +607,7 @@ html{
         outline: none;
         color: var(--text);
         border: none;
+        margin: 0 2rem;
         padding: 0 0.5rem;
         box-shadow: 2px 2px 5px rgba(56, 53, 53, 0.856) inset;
     }
