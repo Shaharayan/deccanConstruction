@@ -429,7 +429,7 @@ html{
 
     .footer-section{
         background-image: url("/homepage/static/homepage/images/vector.png");
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         background-position: start;
         height: max-content;
         display: flex;
