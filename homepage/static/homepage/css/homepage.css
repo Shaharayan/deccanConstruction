@@ -810,7 +810,7 @@ html{
 
     .all-testimonials{
         position: relative;
-        height: 40rem;
+        height: 35rem;
     }
 
     .testimonial-title{
@@ -819,7 +819,7 @@ html{
 
     .testimonial-meta{
         font-size: 1.7rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
 
