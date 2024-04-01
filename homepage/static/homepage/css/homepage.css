@@ -9,6 +9,7 @@ body{
     font-size: 16px;
     background-color: var(--primary);
     font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
 }
 
 html{
