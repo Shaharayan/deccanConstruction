@@ -727,7 +727,7 @@ html{
         gap: 1rem;
     }
 
-    .navigation-Tabs a{
+    .navigation-tab{
         text-decoration: none;
         color: var(--text);
         font-weight: 700;
@@ -735,7 +735,7 @@ html{
         position: relative;
     }
 
-    .navTab::after{
+    .navigation-tab::after{
         content: '';
         width: 0;
         height: 2px;
