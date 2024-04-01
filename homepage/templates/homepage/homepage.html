@@ -16,7 +16,7 @@
                 <div class="menu-close-icon"><i class="fa-solid fa-x"></i></div>
                 <div class="navigation-Tabs">
                     <a href="#hero-section"  onclick="selectedTab()" class="navigation-tab activeTab">Home</a>
-                    <a href="#why-choose-us" onclick="selectedTab()" class="navigation-tab">Services</a>
+                    <a href="#services-section" onclick="selectedTab()" class="navigation-tab">Services</a>
                     <a href="#testimonials" onclick="selectedTab()" class="navigation-tab">Testimonials</a>
                 </div>
             </div>
@@ -24,7 +24,7 @@
             <button class="headerContact">Contact Us</button>
         </div>
 
-        <div class="hero-section" id="hero-section">
+        <div class="hero-section section" id="hero-section">
             <div class="image-container">
                 {% for image in heroImage %}
 
@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        <div class="services-section">
+        <div class="services-section section" id="services-section">
             <div class="available-services">Services We Provide</div>
             <div class="service active">
                 <div class="service-image"><img src="{% static "homepage/images/2Dfloorplan.png" %}" alt=""></div>
@@ -87,7 +87,7 @@
             </div>
         </div>
 
-        <div class="testimonial-section" id="testimonials">
+        <div class="testimonial-section section" id="testimonials">
             <h3 class="testimonial-title">They Trusted Us</h3>
             <p class="testimonial-meta">Our user's testimonials to see what they have to say.</p>
 

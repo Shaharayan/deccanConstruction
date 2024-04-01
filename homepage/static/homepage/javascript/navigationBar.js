@@ -1,8 +1,32 @@
 const menuOpen = document.querySelector('.hamburger-menu-icon');
-
 const menuClose = document.querySelector('.menu-close-icon');
-
 const navigationMenu = document.querySelector('.navigation-menu');
+
+
+const navTabs = document.querySelectorAll(".navigation-tab");
+const sections = document.querySelectorAll(".section");
+window.addEventListener('scroll', () => {
+
+    let currentSection = ""
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if(pageYOffset >= (sectionTop - sectionHeight/5)){
+            currentSection = section.getAttribute('id');
+            console.log(currentSection);
+        }
+    });
+
+    navTabs.forEach(link => {
+        if (link.getAttribute('href').slice(1) === currentSection) {
+            document.querySelector('.activeSection').classList.remove('activeSection');
+            link.classList.add('activeSection');
+            currentSection = ""
+        }
+      });
+});
+
 
 
 function selectedTab(){
@@ -13,10 +37,14 @@ function selectedTab(){
     event.currentTarget.classList.add("activeTab");
 }
 
+
+
 document.addEventListener('DOMContentLoaded',()=>{
     x = window.matchMedia("(max-width: 500px)")
     responsive(x);
 })
+
+
 
 function responsive(x){
     if (x.matches){

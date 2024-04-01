@@ -725,7 +725,7 @@ html{
         display: flex;
         flex-direction: row;
         margin: 0;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .navigation-tab{
@@ -740,15 +740,19 @@ html{
         content: '';
         width: 0;
         height: 2px;
-        background-color: var(--secondary);
+        background-color: var(--accent);
         position: absolute;
         left: 0;
         bottom: -3px;
         transition: 0.5s;
     }
     
-    .activeTab::after{
+    .activeSection::after{
         width: 100%;
+    }
+
+    .activeSection{
+        color: var(--accent);
     }
 
     .logo img{
