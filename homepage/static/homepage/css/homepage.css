@@ -705,6 +705,7 @@ html{
         height: 6rem;
         z-index: 1000;
         overflow: hidden;
+        border-bottom: 1px solid var(--accent);
     }
 
     .hamburger-menu-icon,
