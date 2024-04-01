@@ -703,7 +703,7 @@ html{
         top: 0;
         left: 0;
         right: 0;
-        height: 4rem;
+        height: 5rem;
         z-index: 1000;
         overflow: hidden;
         border-bottom: 1px solid var(--accent);
@@ -757,7 +757,7 @@ html{
     }
 
     .hero-section{
-        margin-top: 8rem;
+        margin-top: 6rem;
     }
 
 
