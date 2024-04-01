@@ -5,6 +5,13 @@ const menuClose = document.querySelector('.menu-close-icon');
 const navigationMenu = document.querySelector('.navigation-menu');
 
 
+function selectedTab(){
+    const navtabs = document.getElementsByClassName("navigation-tab");
+    for (tab of navtabs){
+        tab.classList.remove("activeTab");
+    }
+    event.currentTarget.classList.add("activeTab");
+}
 
 document.addEventListener('DOMContentLoaded',()=>{
     x = window.matchMedia("(max-width: 500px)")

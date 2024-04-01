@@ -15,9 +15,9 @@
             <div class="navigation-menu">
                 <div class="menu-close-icon"><i class="fa-solid fa-x"></i></div>
                 <div class="navigation-Tabs">
-                    <a href="#hero-section">Home</a>
-                    <a href="#why-choose-us">Services</a>
-                    <a href="#">Testimonials</a>
+                    <a href="#hero-section"  onclick="selectedTab()" class="navigation-tab activeTab">Home</a>
+                    <a href="#why-choose-us" onclick="selectedTab()" class="navigation-tab">Services</a>
+                    <a href="#testimonials" onclick="selectedTab()" class="navigation-tab">Testimonials</a>
                 </div>
             </div>
             <div class="logo"><img src="{% static "homepage/images/logo.png" %}" alt="Logo"></div>
@@ -87,7 +87,7 @@
             </div>
         </div>
 
-        <div class="testimonial-section">
+        <div class="testimonial-section" id="testimonials ">
             <h3 class="testimonial-title">They Trusted Us</h3>
             <p class="testimonial-meta">Our user's testimonials to see what they have to say.</p>
 
