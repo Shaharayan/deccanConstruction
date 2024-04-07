@@ -251,6 +251,12 @@ html{
         margin: 2rem 0;
     }
 
+
+    .our-work-grid{
+        display: grid;
+        gap: 1rem;
+    }
+
     .ourWork{
         display: flex;
         flex-direction: column;
