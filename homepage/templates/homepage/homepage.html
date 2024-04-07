@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="logo"><img src="{% static "homepage/images/logo.png" %}" alt="Logo"></div>
-            <button class="headerContact">Contact Us</button>
+            <div class="headercontact-container"><button class="headerContact" onclick="contactPopup()">Contact Us</button></div>
         </div>
 
         <div class="hero-section section" id="hero-section">
@@ -46,29 +46,31 @@
 
         <div class="why-choose-us" id="why-choose-us">
             <h4 class="whyUs">Why Deccan Construction?</h4>
-            <div class="ourWork">
-                <div class="ourWorkIcon"><img src="{% static "homepage/images/convenient.png" %}" alt=""></div>
-                <div class="ourWorkTag">All-in-One Convenience</div>
-                <div class="ourWorkDescription">Streamline your project with comprehensive services covering planning, design, and execution, all under one roof for ultimate convenience.</div>
-            </div>
-            <div class="ourWork">
-                <div class="ourWorkIcon"><img src="{% static "homepage/images/accounting.png" %}" alt=""></div>
-                <div class="ourWorkTag">Transparent Financial Planning</div>
-                <div class="ourWorkDescription">Enjoy peace of mind with clear, honest estimates and financial guidance throughout your project journey.</div>
-            </div>
-            <div class="ourWork">
-                <div class="ourWorkIcon"><img src="{% static "homepage/images/tailored.png" %}" alt=""></div>
-                <div class="ourWorkTag">Tailored Excellence</div>
-                <div class="ourWorkDescription">Elevate your space with cutting-edge designs and creative solutions that redefine architectural excellence and captivate your imagination.</div>
-            </div>
-            <div class="ourWork">
-                <div class="ourWorkIcon"><img src="{% static "homepage/images/innovation.png" %}" alt=""></div>
-                <div class="ourWorkTag">Innovative Design Mastery</div>
-                <div class="ourWorkDescription">Experience personalized attention and bespoke solutions crafted to match your unique vision and requirements seamlessly.</div>
+            <div class="our-work-grid">
+                <div class="ourWork convenience">
+                    <div class="ourWorkIcon"><img src="{% static "homepage/images/convenient.png" %}" alt=""></div>
+                    <div class="ourWorkTag">All-in-One Convenience</div>
+                    <div class="ourWorkDescription">Streamline your project with comprehensive services covering planning, design, and execution, all under one roof for ultimate convenience.</div>
+                </div>
+                <div class="ourWork financialPlanning">
+                    <div class="ourWorkIcon"><img src="{% static "homepage/images/accounting.png" %}" alt=""></div>
+                    <div class="ourWorkTag">Transparent Financial Planning</div>
+                    <div class="ourWorkDescription">Enjoy peace of mind with clear, honest estimates and financial guidance throughout your project journey.</div>
+                </div>
+                <div class="ourWork tailoredExperience">
+                    <div class="ourWorkIcon"><img src="{% static "homepage/images/tailored.png" %}" alt=""></div>
+                    <div class="ourWorkTag">Tailored Excellence</div>
+                    <div class="ourWorkDescription">Elevate your space with cutting-edge designs and creative solutions that redefine architectural excellence and captivate your imagination.</div>
+                </div>
+                <div class="ourWork innovativeDesign">
+                    <div class="ourWorkIcon"><img src="{% static "homepage/images/innovation.png" %}" alt=""></div>
+                    <div class="ourWorkTag">Innovative Design Mastery</div>
+                    <div class="ourWorkDescription">Experience personalized attention and bespoke solutions crafted to match your unique vision and requirements seamlessly.</div>
+                </div>
             </div>
         </div>
 
-        <div class="services-section section" id="services-section">
+        <div class="services-section section" id = "services-section">
             <div class="available-services">Services We Provide</div>
             <div class="service active">
                 <div class="service-image"><img src="{% static "homepage/images/2Dfloorplan.png" %}" alt=""></div>
@@ -87,9 +89,11 @@
             </div>
         </div>
 
-        <div class="testimonial-section section" id="testimonials">
-            <h3 class="testimonial-title">They Trusted Us</h3>
-            <p class="testimonial-meta">Our user's testimonials to see what they have to say.</p>
+        <div class="testimonial-section section" id = "testimonials">
+            <div class="testimonial-headers">
+                <h3 class="testimonial-title">They Trusted Us</h3>
+                <p class="testimonial-meta">Our user's testimonials to see what they have to say.</p>
+            </div>
 
             <div class="all-testimonials">
                 {% for review in reviews%}
