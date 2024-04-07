@@ -39,24 +39,20 @@ function selectedTab(){
 
 
 
-document.addEventListener('DOMContentLoaded',()=>{
-    x = window.matchMedia("(max-width: 500px)")
-    responsive(x);
+document.addEventListener('DOMContentLoaded',() => {
+    width = window.innerWidth;
+    if (width < 500){
+        navigationMenu.style.transform = 'translateX(-100%)';
+    }
 })
 
 
-
-function responsive(x){
-    if (x.matches){
-        navigationMenu.style.transform = 'translateX(-100%)';
-    }
-}
 
 menuOpen.addEventListener('click', () => {
     const navigationMenu = document.querySelector('.navigation-menu');
     navigationMenu.classList.remove('unactive');
     navigationMenu.classList.add('active');
-    menuOpen.style.display = 'none';
+    menuOpen.style.visibility = 'hidden';
     
 })
 
@@ -64,5 +60,5 @@ menuClose.addEventListener('click', () => {
     const navigationMenu = document.querySelector('.navigation-menu');
     navigationMenu.classList.remove('active');
     navigationMenu.classList.add('unactive');
-    menuOpen.style.display = 'block';  
+    menuOpen.style.visibility = 'visible'; 
 })
